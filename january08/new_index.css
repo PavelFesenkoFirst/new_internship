@@ -1,0 +1,130 @@
+body{
+    background-color: #fff;
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Nunito Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+}
+.login-link{
+    color: #FF004C;
+}
+.label-firstName{
+    margin-left: 0px;
+    margin-bottom: 0px;
+    color: #A1A3A7;
+}
+.label-secondName{
+    padding-left: 32px;
+    margin-bottom: 0px;
+    color: #A1A3A7;
+}
+.name-input{
+    display: flex;
+}
+.main-form-register{
+    padding-top: 28px;
+}
+.form-input-first-name{
+    height: 50px;
+    width: 232px;
+    margin-left: 172px;
+    outline: none;
+    border: solid #A1A3A7;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+}
+.form-input-first-name2{
+    height: 50px;
+    width: 232px;
+    margin-left: 32px;
+    outline: none;
+    border: solid #A1A3A7;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+}
+.form-input-first-email{
+    margin-top: 50px;
+    height: 50px;
+    width: 496px;
+    margin-left: 172px;
+    outline: none;
+    border: solid #A1A3A7;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+}
+.form-input-first-name:focus::placeholder {
+    transform: translateY(-10px);
+}
+.form-input-first-name:optional:invalid {
+    border-color: red;
+}
+.form-input-first-name:valid{
+    background: url("media/Vector.png");
+    background-size: 15px 10px;
+    background-repeat: no-repeat;
+    background-position: 217px 15px;
+}
+.form-input-first-name:focus {
+    outline: none;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    border-bottom-color: #323232;
+}
+.form-input-first-name2:focus::placeholder {
+    transform: translateY(-10px);
+}
+.form-input-first-name2:optional:invalid {
+    border-color: red;
+}
+.form-input-first-name2:valid{
+    background: url("media/Vector.png");
+    background-size: 15px 10px;
+    background-repeat: no-repeat;
+    background-position: 217px 15px;
+}
+.form-input-first-name2:focus {
+    outline: none;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    border-bottom-color: #323232;
+}
+.form-input-first-email:focus::placeholder {
+    transform: translateY(-10px);
+}
+.form-input-first-email:optional:invalid {
+    border-color: red;
+}
+.form-input-first-email:valid{
+    background: url("media/Vector.png");
+    background-size: 15px 10px;
+    background-repeat: no-repeat;
+    background-position: 481px 1px;
+}
+.form-input-first-email:focus {
+    outline: none;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    border-bottom-color: #323232;
+}
+.btn-next-page{
+    margin-top: 56px;
+    margin-left: 488px;
+    outline: none;
+    width: 180px;
+    height: 40px;
+    background: #FF004C;
+    border-radius: 24px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 120%;
+    text-align: center;
+    color: #FFFFFF;
+    border: none;
+}

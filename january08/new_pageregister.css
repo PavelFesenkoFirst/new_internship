@@ -1,0 +1,330 @@
+body{
+    background-color: #fff;
+    margin: 0 auto;
+    padding: 0;
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: normal;
+}
+.login-link{
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 150%;
+    color: #FF004C;
+}
+.container{
+    display: flex;
+    margin: 0 auto;
+    width: 1360px;
+    height: 768px;
+}
+.input-information{
+    width: 796px;
+    height: 768px;
+}
+.info-some{
+    background: #E5E5E5;;
+    width: 564px;
+    height: 768px;
+    background-image: url("media/Background.png");
+}
+
+.img_logo{
+    margin-top: 24px;
+    margin-left: 330px;
+}
+.met_free{
+    margin-left: 172px;
+    margin-top: 80px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 120%;
+}
+.pink{
+    position: relative;
+    z-index: 1;
+}
+.pink:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    background: rgba(255, 172, 196, 1);
+    bottom: 10px;
+    left: 0;
+    display: block;
+    z-index: -1;
+}
+.content-register-page{
+    margin-left: 172px;
+    margin-top: 16px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    color: #323232;
+}
+.second-form-registration{
+    display: flex;
+}
+.my-form{
+    padding-top: 28px;
+    margin-left: 172px;
+}
+.form-input-company{
+    height: 50px;
+    width: 496px;
+    outline: none;
+    border: solid #A1A3A7;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+}
+.form-input-company:focus::placeholder {
+    transform: translateY(-10px);
+}
+.form-input-company:optional:invalid {
+    border-color: red;
+}
+.form-input-company:valid{
+    background: url("media/Vector.png");
+    background-size: 15px 10px;
+    background-repeat: no-repeat;
+    background-position: 481px 15px;
+}
+.form-input-company:focus {
+    outline: none;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    border-bottom-color: #323232;
+}
+/*.label-company{*/
+/*    margin-left: 172px;*/
+/*    margin-top: 28px;*/
+/*    font-style: normal;*/
+/*    font-weight: normal;*/
+/*    font-size: 12px;*/
+/*    line-height: 150%;*/
+/*    color: #A1A3A7;*/
+/*    margin-bottom: 0;*/
+/*}*/
+/*.input-company{*/
+/*    width: 496px;*/
+/*    margin-left: 172px;*/
+/*    outline: none;*/
+/*    border: solid #A1A3A7;*/
+/*    border-left: none;*/
+/*    border-top: none;*/
+/*    border-right: none;*/
+/*}*/
+.check-accept{
+    display: flex;
+    margin-top: 24px;
+
+    margin-bottom: 0;
+    padding-bottom: 0;
+
+}
+.check-box-register{
+    margin-top: 16px;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #A1A3A7;
+    box-sizing: border-box;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.accept-privacy{
+    padding-left: 8px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+    color: #A1A3A7;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.some-a{
+    color: #A1A3A7;
+}
+.agree-continue{
+    margin-top: 4px;
+    margin-left: 171px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 150%;
+    color: #FF1E1E;
+}
+.btn-block{
+    display: flex;
+    padding-top: 48px;
+}
+.btn-back{
+    margin-top: 25px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 120%;
+    text-decoration-line: underline;
+    color: #A1A3A7
+}
+.btn-create-account{
+    outline: none;
+    margin-left: 280px;
+    width: 180px;
+    height: 40px;
+    background: #FF004C;
+    border-radius: 24px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 120%;
+    text-align: center;
+    color: #FFFFFF;
+    border: none;
+}
+.full-image-info{
+    margin-top: 187px;
+    margin-left: 104px;
+}
+
+
+
+.modal {
+    /*display: none;*/
+    position: fixed;
+    /* фиксированное положение */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    /* цвет фона */
+    z-index: 1050;
+    opacity: 0;
+    /* по умолчанию модальное окно прозрачно */
+    -webkit-transition: opacity 50ms ease-in;
+    -moz-transition: opacity 50ms ease-in;
+    transition: opacity 50ms ease-in;
+    /* анимация перехода */
+    pointer-events: none;
+    /* элемент невидим для событий мыши */
+}
+
+/* при отображении модального окно */
+.modal:target {
+    opacity: 1;
+    pointer-events: auto;
+    overflow-y: auto;
+}
+/* ширина модального окна и его отступы от экрана */
+.modal-dialog {
+    overflow: scroll;
+    overflow-x:hidden;
+    position: relative;
+    width: 784px;
+    height: 704px;
+    margin-top: 32px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 32px;
+}
+
+.modal-content {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: .3rem;
+    outline: 0;
+    font-family: Nunito Sans;
+    padding-right: 64px;
+    padding-left: 64px;
+}
+
+/* свойства для заголовка модального окна */
+.modal-header {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 15px;
+    /*border-bottom: 1px solid #eceeef;*/
+}
+
+.modal-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    color: #000000;
+    padding-top: 56px;
+}
+.second-title-modal{
+    margin-top: 40px;
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 120%;
+    color: #000000;
+}
+
+/* свойства для кнопки "Закрыть" */
+.close {
+    padding-left: 647px;
+    float: right;
+    font-family: sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .5;
+    text-decoration: none;
+}
+
+/* свойства для кнопки "Закрыть" при нахождении её в фокусе или наведении */
+.close:focus,
+.close:hover {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    opacity: .75;
+}
+
+/* свойства для блока, содержащего основное содержимое окна */
+.modal-body {
+    position: relative;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    /*padding: 15px;*/
+    overflow: auto;
+}
